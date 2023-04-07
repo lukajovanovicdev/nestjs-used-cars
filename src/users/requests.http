@@ -6,3 +6,20 @@ Content-Type: application/json
   "email": "test@example.com",
   "password": "test"
 }
+
+### Find a particular user with a given ID
+GET http://localhost:3000/auth/3
+
+### Find all users with a given email
+GET http://localhost:3000/auth?email=test@example.com
+
+### Delete a user with a given ID
+DELETE http://localhost:3000/auth/1
+
+### Update a user
+PATCH http://localhost:3000/auth/3
+Content-Type: application/json
+
+{
+  "email": "patch@example.com"
+}
