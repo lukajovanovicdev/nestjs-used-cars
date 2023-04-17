@@ -18,7 +18,8 @@
     "test:cov": "cross-env NODE_ENV=test jest --coverage",
     "test:debug": "cross-env NODE_ENV=test node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "cross-env NODE_ENV=test jest --config ./test/jest-e2e.json --maxWorkers=1",
-    "typeorm": "cross-env NODE_ENV=development typeorm-ts-node-commonjs"
+    "typeorm": "cross-env NODE_ENV=development typeorm-ts-node-commonjs",
+    "vercel-build": "nest build"
   },
   "dependencies": {
     "@nestjs/common": "^9.0.0",
