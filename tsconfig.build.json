@@ -1,4 +1,12 @@
 {
   "extends": "./tsconfig.json",
-  "exclude": ["node_modules", "test", "dist", "**/*spec.ts"]
+  "exclude": [
+    "db.datasource.ts",
+    "db.datasourceoptions.ts",
+    "migrations",
+    "node_modules",
+    "test",
+    "dist",
+    "**/*spec.ts"
+  ]
 }
